@@ -1,3 +1,6 @@
+//RIDDHI LOKHANDE
+//EXP 2 C
+//23070123107
 #include<iostream>
 using namespace std;
 int main() {
