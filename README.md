@@ -89,7 +89,7 @@ int main() {
 
 //RIDDHI LOKHANDE
 //ENTC B2
-//EXP 2 A
+//EXP 2 B
 //23070123107
 #include<iostream>
 using namespace std;
