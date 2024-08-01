@@ -1,4 +1,4 @@
-# EXP-1A 
+# EXP-2
 ## Aim
 
 - To implement and study datatypes in C++ language
@@ -32,25 +32,25 @@ Each of these types can be signed (default) or unsigned.
 4. Boolean Type:
 -bool: Represents true/false values.
 #### STORAGE CLASSES-
-1. Auto:
 
+1. ##### Auto:
 Default storage class for local variables.
 Automatically inferred, but largely redundant in modern C++ as the type is deduced.
-2.Register:
 
+2. ##### Register:
 Suggests to the compiler to store the variable in a CPU register for faster access.
 Modern compilers often ignore this hint and manage registers automatically.
-3. Static:
 
+3. ##### Static:
 For local variables, retains the variable's value between function calls.
 For global variables, restricts the visibility to the file in which it's declared.
 For class members, shared among all instances of the class.
-4. Extern:
 
+4. ##### Extern:
 Declares a global variable or function that is defined in another file.
 Used to access variables or functions across multiple files.
-5. Mutable:
 
+5. ##### Mutable:
 Only applies to class member variables.
 Allows modification of a member variable even if the containing object is const.
 ## Code 1 SIZE OF DATATYPES 
@@ -138,7 +138,7 @@ return 0;
 }
 ```
 ### Output
-![image](https://github.com/user-attachments/assets/8613a136-dbf9-40ba-a50d-a48914322f67)
+![image](https://github.com/user-attachments/assets/44c171ce-6911-4f0e-ac11-d84142c7e39e)
 
 ## CODE 3 STORAGE CLASSES
 ```cpp
@@ -172,8 +172,7 @@ int main() {
 }
 ```
 #### OUTPUT 
-![image](https://github.com/user-attachments/assets/44c171ce-6911-4f0e-ac11-d84142c7e39e)
-
+![image](https://github.com/user-attachments/assets/8613a136-dbf9-40ba-a50d-a48914322f67)
 
 ## Conclusion
 This simple program demonstrates the basic structure and workflow of a C++ program, including the use of headers, the main function, standard output, and the return statement.
