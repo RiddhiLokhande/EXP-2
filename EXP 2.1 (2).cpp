@@ -1,7 +1,7 @@
-//KANWALJEET SINGH
+//RIDDHI LOKHANDE
 //ENTC B2
-//EXP 2.1
-//23070123124
+//EXP 2 A
+//23070123107
 #include <iostream>
 using namespace std;
 int main() {
