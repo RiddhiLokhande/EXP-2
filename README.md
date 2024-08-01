@@ -1,9 +1,8 @@
-
 # EXP-1A 
 ## Aim
 
-- To print HELLO WORLD code in C++ language
-- to write a calculator code in C++ language
+- To implement and study datatypes in C++ language
+
 
 ## Software required-
 
@@ -12,9 +11,48 @@ You need to have a C++ compiler installed on your system. Common options include
 - [Microsoft Visual C++](https://visualstudio.microsoft.com/vs/features/cplusplus/)
 
 ## Theory
-Printing "Hello, World!" in C++ involves several concepts fundamental to the language. To print "Hello, World!" in C++ programming, just place Hello, World! inside an inverted comma ("") after  cout<<.
-#### Calculator code-
-we have to use different operators like +,*,-,/ for performing aruthmetic operations like addition,subtraction,multiplication and division. Also,we have to declare some variables usind int function.
+In C++, data types are categorized into several groups: basic (or fundamental) data types, derived data types, and user-defined data types. Here's an overview of each category:
+
+#### Basic Data Types
+1. Integer Types:
+-int: A basic integer type.
+-short: Typically half the size of an int.
+-long: At least as large as an int.
+-long long: Typically larger than a long.
+Each of these types can be signed (default) or unsigned.
+2. Character Types:
+-char: Typically used to store characters.
+-signed char: Ensures the char is signed.
+-unsigned char: Ensures the char is unsigned.
+-wchar_t: Used for wide characters.
+3. Floating-Point Types:
+-float: Single-precision floating point.
+-double: Double-precision floating point.
+-long double: Extended-precision floating point.
+4. Boolean Type:
+-bool: Represents true/false values.
+#### STORAGE CLASSES-
+1. Auto:
+
+Default storage class for local variables.
+Automatically inferred, but largely redundant in modern C++ as the type is deduced.
+2.Register:
+
+Suggests to the compiler to store the variable in a CPU register for faster access.
+Modern compilers often ignore this hint and manage registers automatically.
+3. Static:
+
+For local variables, retains the variable's value between function calls.
+For global variables, restricts the visibility to the file in which it's declared.
+For class members, shared among all instances of the class.
+4. Extern:
+
+Declares a global variable or function that is defined in another file.
+Used to access variables or functions across multiple files.
+5. Mutable:
+
+Only applies to class member variables.
+Allows modification of a member variable even if the containing object is const.
 ## Code 1 SIZE OF DATATYPES 
 ```cpp
 //RIDDHI LOKHANDE
@@ -104,57 +142,37 @@ return 0;
 
 ## CODE 3 STORAGE CLASSES
 ```cpp
-
 //RIDDHI LOKHANDE
 //ENTC B2
-//EXP 2 A
 //23070123107
+//EXP 2 C
+#include <iostream> 
+using namespace std;
+
 #include<iostream>
 using namespace std;
+
 int main() {
     int a;
-    char b;
-    signed char c;
-    unsigned char d;
-    float e;
-    double f;
-    long double g;
-    bool h;
-    cout<<"Enter an integer: ";
+    cout<<"Enter a number: ";                       
     cin>>a;
-    cout<<"Size of int is:"<<sizeof(a)<<"\n";
+    cout<<"\nInteger= "<<a<<" and size is "<<sizeof(a)<<" bytes.";  
 
-    cout<<"Enter a character: ";
+    register int b;
+    cout<<"\nEnter a number: ";                                     
     cin>>b;
-    cout<<"Size of char is:"<<sizeof(b)<<"\n";
+    cout<<"\nRegister= "<<b<<" and size is "<<sizeof(b)<<" bytes.";   
 
-    cout<<"Enter a character: ";
-    cin>>c;
-    cout<<"Size of signed char is:"<<sizeof(c)<<"\n";
-
-    cout<<"Enter a character: ";
+    static int d;
+    cout<<"\nEnter any number: ";                                      
     cin>>d;
-    cout<<"Size of unsigned char is:"<<sizeof(d)<<"\n";
+    cout<<"\nStatic= "<<d<<" and size is "<<sizeof(d)<<" bytes.";      
 
-    cout<<"Enter a number: ";
-    cin>>e;
-    cout<<"Size of float is:"<<sizeof(e)<<"\n";
-    
-
-    cout<<"Enter a number: ";
-    cin>>f;
-    cout<<"Size of double is:"<<sizeof(f)<<"\n";
-
-    cout<<"Enter a number: ";
-    cin>>g;
-    cout<<"Size of long double is:"<<sizeof(g)<<"\n";
-
-    cout<<"Enter a bool value: "; 
-    cin>>h;
-    cout<<"Size of bool is:"<<sizeof(h)<<"\n";
-return 0;
+    return 0;
 }
 ```
+#### OUTPUT 
+![image](https://github.com/user-attachments/assets/44c171ce-6911-4f0e-ac11-d84142c7e39e)
 
 
 ## Conclusion
