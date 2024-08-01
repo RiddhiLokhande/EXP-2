@@ -1,5 +1,5 @@
 //RIDDHI LOKHANDE
-//EXP 2 C
+//EXP 2 B
 //23070123107
 #include<iostream>
 using namespace std;
